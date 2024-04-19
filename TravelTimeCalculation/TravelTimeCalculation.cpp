@@ -43,7 +43,7 @@ int main() {
         tMinutes = aMinutes - dMinutes;
     }
     else if (aHours < dHours) {
-        tHours = (24 - dHours) + aHours;
+    tHours = (24 - dHours) + aHours;
         tMinutes = aMinutes - dMinutes;
     }
     else if (dHours == aHours) {
@@ -57,13 +57,14 @@ int main() {
             tMinutes = 60 - (dMinutes - aMinutes);
         }
         else {
-            tMinutes = aMinutes - dMinutes;
-        }
+        tMinutes = aMinutes - dMinutes;
+    }
     }
     if (tMinutes < 0) {
         tMinutes *= -1;
     }
 
 
+    }
     cout << "Trip was: " << tHours << " h. " << tMinutes << " min.";
 }
