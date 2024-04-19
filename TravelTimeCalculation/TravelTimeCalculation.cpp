@@ -37,6 +37,7 @@ int main() {
     int tHours = 0;
     int tMinutes = 0;
 
+
     if (dHours < aHours && dMinutes < aMinutes) {
         tHours = aHours - dHours;
         tMinutes = aMinutes - dMinutes;
